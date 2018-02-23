@@ -20,7 +20,7 @@ function searchWiki(APIlink) {
 
       // Display first 5 results
       for (var i = 1; i <= 5; i++) {
-        console.log("in for loop");
+
         // If object has no content
         if ($.isEmptyObject(data[1][i])) {
           $("#resultsDiv").prepend("<div class='results'> <h3>No result here.</h3></div>");
@@ -93,19 +93,12 @@ $("#input").keypress(function(e){
 
 $("#goButton").click(function(){
 
-  /*if ( $("#resultsDiv").is(":visible") ) {
+  // If results are already shown, do the fade in/out effect
+  if ( $("#resultsDiv").is(":visible") ) {
     fadeEffect();
-  }*/
-  // Grab the value of user input
-  var input = document.getElementById("input").value;
-
-  // The wikipedia API url to use in AJAX calls
-  var wikiAPI = "https://en.wikipedia.org/w/api.php?action=opensearch&search="+input+"&format=json&callback?";
-  
-  searchWiki(wikiAPI);
-
-  // Slowly show the results
-  $("#resultsDiv").show(2000);
+  } else { // only executes on first search
+    firstEffect();
+  }
 }); // END click event
 
 
