@@ -1,0 +1,30 @@
+{
+  "name": "wiki-viewer",
+  "version": "1.0.0",
+  "description": "let's the user view a wiki of a person or thing. ",
+  "main": "script.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcmaster-99/Wiki-Viewer.git"
+  },
+  "author": "Bilal Hjiouaj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcmaster-99/Wiki-Viewer/issues"
+  },
+  "homepage": "https://github.com/mcmaster-99/Wiki-Viewer#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "gulp": "latest",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest"
+  }
+}
